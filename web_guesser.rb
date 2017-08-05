@@ -1,5 +1,7 @@
 require 'sinatra'
- 
+require 'sinatra/reloader'
+
+x = rand(100); 
 get '/' do
-  "Hello, world!"
+  "THE SECRET NUMBER IS " + x.to_s
 end
