@@ -16,7 +16,9 @@
     }
     </style>
     <% else %>
-    <%= left %> guesses left!
+    <% if left != 0 %> 
+      <%= left %> guesses left!
+    <% end %>
     <style>
     body {
       background: LightCoral;
