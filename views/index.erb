@@ -10,6 +10,18 @@
     <br>
     <% if msg == "You got it right!" %>
       THE SECRET NUMBER IS <%= number %>
+    <style>
+    body {
+      background: LightGreen;
+    }
+    </style>
+    <% else %>
+    <%= left %> guesses left!
+    <style>
+    body {
+      background: LightCoral;
+    }
+      </style>
     <% end %>       
     </p>
   </body>
